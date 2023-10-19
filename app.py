@@ -27,6 +27,9 @@ def index():  # put application's code here
     entry = Item(name=fname, price=fprice, barcode=fcode, desc=fdesc)
     db.session.add(entry)
     db.session.commit()
+
+    if 'yes == true':
+        print('yes')
     return 'success'
 
 
